@@ -1,0 +1,243 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0;
+}
+
+.menu {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.menu a {
+    display: block;
+    padding: 7px 18px 5px 0;
+    color: #9daeb6;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.menu a:hover,
+.menu a:active {
+    border-bottom: 2px solid #36aeea;
+}
+.menu-btn{
+    background: url(../images/humburger_menu.svg) -5px 5px no-repeat;
+    background-size: cover;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.menu-btn:focus{
+    outline: none;
+}
+.menu-btn:hover +.menu-wrap,
+.menu-wrap:hover,
+.menu-btn:active +.menu-wrap,
+.menu-wrap:active{
+    display: block;
+}
+.menu-wrap{
+    display: none;
+    position: absolute;
+    right: -15px;
+    top: 45px;
+    z-index: 11;
+    width: 60%;
+    background: #fff;
+    opacity: 0.9;
+}
+.logo-wrap{
+    padding: 0;
+}
+.call-us {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    display: none;
+}
+
+.call-us a {
+    display: block;
+    line-height: 39px;
+    border: 3px solid #36aeea;
+    border-radius: 5px;
+    padding: 0 0;
+    color: #36aeea;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+header .call-us a:hover,
+header .call-us a:active {
+    text-decoration: none;
+}
+
+.promo-wrap {
+    padding: 0;
+}
+
+.gallery-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 80px 0 30px 0;
+    font-size: 33px;
+}
+
+.ad-box {
+    background: #f8f9fa;
+    margin-top: 62px;
+    padding: 0;
+}
+
+.ad-box a {
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    margin: 60px 0 52px 0;
+}
+
+.our-clients {
+    margin-top: 35px;
+}
+
+.our-clients .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.client-comment {
+    padding-top: 40px;
+    background: url(../images/quote_icon.svg) 0 15px no-repeat;
+    background-size: 30px;
+}
+
+.client-comment p {
+    font-size: 18px;
+    color: #bcbcbc;
+    margin-bottom: 24px;
+    line-height: 32px;
+}
+
+.client-comment a {
+    font-size: 16px;
+    color: #36aeea;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.client-comment a span {
+    font-weight: bold;
+}
+.our-contacts{
+    width: 90%;
+    padding: 1px 1px 50px 1px;
+    background: rgba(207,214,218,0.8);
+    border-radius: 5px;
+    margin-bottom: 165px;
+    margin-top: 104px;
+}
+.our-contacts .title{
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #36aeea;
+    margin-bottom: 0;
+}
+.our-contacts p{
+    text-align: center;
+    margin: 0;
+}
+.our-contacts input[type="text"],
+.our-contacts input[type="email"]{
+    display: block;
+    width: 89%;
+    margin: 6% 0% -2% 6%;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    padding: 4% 5% 3% 5%;
+    border-radius: 5px;
+    font-size:18px;
+}
+.submit-btn{
+    border: none;
+    display: block;
+    width: 89%;
+    margin: 6% 0 0 6%;
+    background: #36aeea;
+    color: #fff;
+    font-weight: bold;
+    padding: 4% 5% 5% 5%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.our-contact-wrap {
+    background: url("../images/bottom_back.png") 0 -1800% no-repeat;
+    background-size: cover;
+}
+@media screen and (min-width: 640px) {
+    .header{
+        position: absolute;
+        background: rgba(256, 256, 256, 0.7);
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+    }
+    .menu-wrap{
+        display: block;
+        position: static;
+        padding: 0;
+        background: transparent;
+    }
+    .logo-wrap{
+        padding: 0;
+    }
+    .call-us {
+        padding: 0;
+        display: block;
+    }
+    .menu a {
+        display: inline-block;
+        padding: 7px 18px 5px 0;
+        float: left;
+        color: #9daeb6;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .our-contacts {
+        width: 60%;
+    }
+    .menu-btn{
+        display: none;
+    }
+}
+@media screen and (min-width: 980px) {
+    .our-contacts {
+        width: 38%;
+    }
+}
