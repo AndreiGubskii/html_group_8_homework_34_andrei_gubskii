@@ -14,11 +14,11 @@ body {
 }
 
 .menu {
-    display: inline-block;
+    display: block;
     box-sizing: border-box;
 }
 
-.menu a {
+.item-menu {
     display: block;
     padding: 7px 18px 5px 0;
     color: #9daeb6;
@@ -30,8 +30,15 @@ body {
     margin: 0 auto;
 }
 
-.menu a:hover,
-.menu a:active {
+.item-menu:hover.item-menu::after,
+.item-menu:active.item-menu::after,
+.item-menu:focus.item-menu::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 110%;
     border-bottom: 2px solid #36aeea;
 }
 .menu-btn{
@@ -206,21 +213,21 @@ header .call-us a:active {
         z-index: 10;
         width: 100%;
     }
-    .menu-wrap{
+/*    .menu-wrap{
         display: block;
         position: static;
         padding: 0;
         background: transparent;
-    }
+    }*/
     .logo-wrap{
         padding: 0;
     }
-    .call-us {
+/*    .call-us {
         padding: 0;
         display: block;
-    }
-    .menu a {
-        display: inline-block;
+    }*/
+/*    .item-menu {
+        display: block;
         padding: 7px 18px 5px 0;
         float: left;
         color: #9daeb6;
@@ -229,13 +236,13 @@ header .call-us a:active {
         text-decoration: none;
         position: relative;
         text-transform: uppercase;
-    }
+    }*/
     .our-contacts {
         width: 60%;
     }
-    .menu-btn{
+/*    .menu-btn{
         display: none;
-    }
+    }*/
 }
 @media screen and (min-width: 980px) {
     .our-contacts {
