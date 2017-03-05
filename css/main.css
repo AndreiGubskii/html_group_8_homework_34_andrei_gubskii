@@ -37,21 +37,20 @@ body {
     display: block;
     position: absolute;
     bottom: 0;
-    left: -5%;
-    width: 110%;
+    left: -5px;
+    width: 100%;
     border-bottom: 2px solid #36aeea;
 }
 .menu-btn{
     background: url(../images/humburger_menu.svg) -5px 5px no-repeat;
     background-size: cover;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: none;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    top: 5px;
+    right: -15px;
 }
 .menu-btn:focus{
     outline: none;
@@ -79,12 +78,12 @@ body {
     padding: 0;
     text-align: center;
     margin: 0;
-    display: none;
+    display: block;
 }
 
 .call-us a {
     display: block;
-    line-height: 40px;
+    line-height: 25px;
     border: 3px solid #36aeea;
     border-radius: 5px;
     padding: 0 0;
@@ -92,8 +91,9 @@ body {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 12px;
-    margin: -4% -46% 2% 64%;
+    font-size: 10px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 header .call-us a:hover,
@@ -204,7 +204,26 @@ header .call-us a:active {
     background: url("../images/bottom_back.png") 0 -1800% no-repeat;
     background-size: cover;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 480px){
+    .header{
+        padding-bottom: 10px;
+    }
+    .menu-btn {
+        width: 50px;
+        height: 50px;
+        top: 2px;
+        right: -15px;
+    }
+    .call-us a {
+        line-height: 30px;
+        font-size: 12px;
+        max-width: 115px;
+    }
+    .menu-wrap{
+        top: 47px;
+    }
+}
+@media screen and (min-width: 990px) {
     .header{
         position: absolute;
         background: rgba(256, 256, 256, 0.7);
@@ -213,20 +232,30 @@ header .call-us a:active {
         z-index: 10;
         width: 100%;
     }
-/*    .menu-wrap{
+    .menu-wrap{
         display: block;
         position: static;
         padding: 0;
         background: transparent;
-    }*/
+    }
     .logo-wrap{
         padding: 0;
     }
-/*    .call-us {
+    .call-us {
         padding: 0;
         display: block;
-    }*/
-/*    .item-menu {
+    }
+    .call-us a{
+        line-height: 40px;
+        border-radius: 5px;
+        padding: 0 0;
+        color: #36aeea;
+        font-size: 12px;
+        margin: -4% 0 -3% 64%;
+        max-width: none;
+        width: 82%;
+    }
+    .item-menu {
         display: block;
         padding: 7px 18px 5px 0;
         float: left;
@@ -236,15 +265,19 @@ header .call-us a:active {
         text-decoration: none;
         position: relative;
         text-transform: uppercase;
-    }*/
+    }
+    .item-menu:hover.item-menu::after,
+    .item-menu:active.item-menu::after,
+    .item-menu:focus.item-menu::after{
+        left: 0px;
+        width: 80%;
+    }
     .our-contacts {
         width: 60%;
     }
-/*    .menu-btn{
+    .menu-btn{
         display: none;
-    }*/
-}
-@media screen and (min-width: 980px) {
+    }
     .our-contacts {
         width: 38%;
     }
