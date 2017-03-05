@@ -12,7 +12,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<header class="header">
+			<header class="header" id="top">
 				<div class="container">
 					<div class="col-md-12">
 						<div class="col-xs-6 col-md-2 logo-wrap">
@@ -22,11 +22,11 @@
 						</div>
 						<button class="menu-btn"></button>
 						<div class="col-md-8 menu-wrap">
-							<nav class="menu claerfix">
+							<nav id="menu" class="menu claerfix">
 								<a class="item-menu" href="#">Main slide</a>
-								<a class="item-menu" href="#">Gallery</a>
-								<a class="item-menu" href="#">Clients say</a>
-								<a class="item-menu" href="#">Contacts</a>
+								<a class="item-menu" href="#gallery">Gallery</a>
+								<a class="item-menu" href="#clients">Clients say</a>
+								<a class="item-menu" href="#contacts">Contacts</a>
 							</nav>
 						</div>
 						<div class="col-xs-6 col-md-2 call-us">
@@ -43,7 +43,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-12 col-lg-12">
-						<h2 class="gallery-title">Gallery</h2>
+						<h2 class="gallery-title" id="gallery">Gallery</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -70,7 +70,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-12 col-lg-12 ad-box">
-				<div class="container ">
+				<div class="container">
 					<div class="row">
 						<div class="col-xs-4 col-md-2 col-lg-2">
 							<a href="#"><img class="img-responsive" src="uploads/slack-icon.png"
@@ -103,7 +103,7 @@
 			<div class="col-xs-12 col-md-12 col-lg-12">
 				<div class="our-clients">
 					<div class="container">
-						<div class="row">
+						<div class="row" id="clients">
 							<div class="col-xs-12 col-md-12 col-lg-12">
 								<h2 class="title">Our clients say</h2>
 							</div>
@@ -134,7 +134,7 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-		<div class="row our-contact-wrap">
+		<div class="row our-contact-wrap" id="contacts">
 			<div class="our-contacts center-block">
 				<h2 class="title">contacts</h2>
 				<p>Sign up for our newsletter to receive updates</p>
@@ -147,6 +147,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- Popup -->
 	<div class="popup" id="popup">
 		<div class="our-contacts center-block">
 			<h2 class="title">contacts</h2>
