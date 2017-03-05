@@ -201,7 +201,7 @@ header .call-us a:active {
     font-size: 16px;
 }
 .our-contact-wrap {
-    background: url("../images/bottom_back.png") 0 -1800% no-repeat;
+    background: url("../images/bottom_back.png") 0 bottom no-repeat;
     background-size: cover;
 }
 @media screen and (min-width: 480px){
@@ -281,4 +281,15 @@ header .call-us a:active {
     .our-contacts {
         width: 38%;
     }
+}
+
+.popup{
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    top: 0;
+    left: 0;
 }
